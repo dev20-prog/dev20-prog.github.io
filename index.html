@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <link href="styles.css" rel="stylesheet">
+
+        <title>Online Converter</title>
+    </head>
+
+    <body>
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="generator.html">Ingredient List Page Generator</a>
+            </li>
+        </ul>
+        <h5>Fluid Ingredients:</h5>
+
+        <form class="form-control">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstUnitFl">From: </label>
+                        <select class="form-select" id="firstUnitFl">
+                            <option>L</option>
+                            <option>mL</option>
+                            <option>gal</option>
+                            <option>pt</option>
+                            <option>qt</option>
+                            <option>cups</option>
+                            <option>tsp</option>
+                            <option>tbsp</option>
+                            <option>fl oz</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="secondUnitFl">To: </label>
+                        <select class="form-select" id="secondUnitFl">
+                            <option>L</option>
+                            <option>mL</option>
+                            <option>gal</option>
+                            <option>pt</option>
+                            <option>qt</option>
+                            <option>cups</option>
+                            <option>tsp</option>
+                            <option>tbsp</option>
+                            <option>fl oz</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <label for="amountFluid">Amount: </label>
+                        <input class="form-control" type="number" id="amountFluid" autofocus>
+                    </div>
+                    <div class="col">
+                        <label for="convertedFluid">Conversion: </label>
+                        <input class="form-control" type="number" id="convertedFluid" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h5>Dry/Bulk Ingredients:</h5>
+
+        <form class="form-control">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="firstUnitDry">From: </label>
+                        <select class="form-select" id="firstUnitDry">
+                            <option>g</option>
+                            <option>oz</option>
+                            <option>mg</option>
+                            <option>kg</option>
+                            <option>lb</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="secondUnitDry">To: </label>
+                        <select class="form-select" id="secondUnitDry">
+                            <option>g</option>
+                            <option>oz</option>
+                            <option>mg</option>
+                            <option>kg</option>
+                            <option>lb</option>
+                        </select>
+                    </div>
+                </div>
+                <div class='row'>
+                    <div class="col">
+                        <label for="amountDry">Amount: </label>
+                        <input class="form-control" type="number" id="amountDry" autofocus>
+                    </div>
+                    <div class="col">
+                        <label for="convertedDry">Conversion: </label>
+                        <input class="form-control" type="number" id="convertedDry" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <h5 style="padding: 10px 0px;">Commonly used dry ingredients:</h5>
+        <form class="form-control">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <label for="ingredient">Ingredient: </label>
+                        <select class="form-select" id="ingredient">
+                            <option>Granulated Sugar</option>
+                            <option>Powdered Sugar</option>
+                            <option>Raw Sugar</option>
+                            <option>Salt</option>
+                            <option>All Purpose Flour</option>
+                            <option>Butter</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="firstUnitCom">From: </label>
+                        <select class="form-select" id="firstUnitCom">
+                            <option>g</option>
+                            <option>cups</option>
+                            <option>tbsp</option>
+                            <option>tsp</option>
+                        </select>
+                    </div>
+                    <div class="col">
+                        <label for="secondUnitCom">To: </label>
+                        <select class="form-select" id="secondUnitCom">
+                            <option>g</option>
+                            <option>cups</option>
+                            <option>tbsp</option>
+                            <option>tsp</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                    </div>
+                    <div class="col">
+                        <label for="amountCom">Amount: </label>
+                        <input class="form-control" type="number" id="amountCom" autofocus>
+                    </div>
+                    <div class="col">
+                        <label for="convertedCom">Conversion: </label>
+                        <input class="form-control" type="number" id="convertedCom" disabled>
+                    </div>
+                </div>
+            </div>
+        </form>
+
+        <script src="script.js"></script>
+    </body>
+</html>
