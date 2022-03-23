@@ -15,4 +15,4 @@ The second HTML file **generator.html** renders a webpage which has the same 3 s
 
 The **printList()** function takes in the content of the div with id "print" which consists of the list items added through the functions triggered by the click of "Add" buttons. Before doing so, the visibility of the 'Remove' buttons is hidden. Then a new window is opened with the list and the print function is called. After calling the print function, the "Remove" buttons are made visible again. The purpose of this was to only have the list printed from the div content and not the "Remove" buttons.
 
-For styling, I have used Bootstrap and a little styling from styles.css.
+For styling, I have used Bootstrap.
